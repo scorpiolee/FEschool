@@ -1,0 +1,57 @@
+body{
+                margin:0;
+                padding:0;
+                font-family: "microsoft yahei";
+                font-size: 14px;
+}
+ul,li{
+                margin: 0;
+                padding: 0;
+}
+li{
+                list-style: none;
+}
+
+.clearfix{
+                _height: 1%;
+                overflow: auto;
+}
+div{
+                width: 600px;
+                margin: 20px auto;
+                background: #c3c3c3;
+                padding: 20px ;
+}
+div span{
+                font-size: 20px;
+}
+div ul{
+                margin: 20px 0 20px 50px ;
+                width:70% ;
+}
+ul li{
+                float: left;
+                display: inline-block;
+                line-height: 20px;
+                text-align: center;
+                background: #cd4a48;
+                margin: 10px 6px;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 10px;
+                cursor: pointer;
+}
+#hobby{
+                width: 200px;
+                height: 100px;
+                vertical-align: text-top;
+                margin: 10px 10px;
+}
+#hobby-btn{
+                margin-left: 180px;
+}
+
+
+
+
+

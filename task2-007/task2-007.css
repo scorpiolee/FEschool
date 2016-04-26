@@ -1,0 +1,72 @@
+body{
+                margin:0;
+                padding:0;
+                font-family: "microsoft yahei";
+                font-size: 14px;
+                width: 980px;;
+}
+ul,li,p{
+                margin:0;
+                padding:0;
+                list-style: none;
+}
+.clearfix{
+                _height: 1%;
+                overflow: auto;
+}
+
+
+div,ul,p{
+                width: 50%;
+
+                margin:20px auto;
+                background: #c3c3c3;
+}
+div input{
+                margin: 20px auto;
+}
+p{
+                height: 20px;
+                margin-bottom: 0;
+                text-align: center;
+                padding-top: 4px;
+}
+ul{
+                margin-top: 0;
+}
+#text-in{
+                padding-left:10px;
+                margin-left: 6px;
+}
+#left-out{
+                margin-left: 20px ;
+}
+
+li{
+                width:10%;
+                height: 50px;;
+                float: left;
+                background: red;
+                margin-right: 2%;
+                margin-bottom: 4px;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+}
+#result{
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+}
+#result span {
+                width: 40px;
+                position: absolute;
+                bottom: 0;
+                vertical-align: bottom;
+                box-sizing: border-box;
+                margin: 10px;
+                background-color: #f00;
+                display: inline-block;
+                text-align: center;
+}

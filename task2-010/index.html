@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">             <!--      用flex布局     限定了每一项的宽高，所以在root盒子的宽度以外可以适应屏幕          -->
+                <head>
+                                <meta charset="UTF-8">
+                                <title>task2-010-遍历二叉树</title>
+                                <style>
+                                                body{
+                                                                margin:0;
+                                                                padding:0;
+                                                                background: #fff;
+                                                }
+                                                .root{
+                                                                display: flex;
+                                                                width: 800px;
+                                                                height: 300px;
+                                                                padding: 20px;
+                                                                border: 2px solid #418C59;
+                                                                border-radius: 10px;
+                                                                justify-content: space-between;
+                                                                margin: 30px auto;
+                                                                background: #FFFFFF;
+                                                }
+                                                .child1{
+                                                                display: flex;
+                                                                width: 346px;
+                                                                height: 260px;
+                                                                border: 2px solid #676767;
+                                                                border-radius: 10px;
+                                                                padding: 20px;
+                                                                justify-content: space-between;
+                                                }
+                                                .child2{
+                                                                display: inline-flex;
+                                                                width: 120px;
+                                                                height: 220px;
+                                                                border: 2px solid #818181;
+                                                                border-radius: 10px;
+                                                                padding: 20px;
+                                                                justify-content: space-between;
+                                                }
+                                                .child3{
+                                                                width: 46px;
+                                                                height: 210px;
+                                                                border: 2px solid #c3c3c3;
+                                                                border-radius: 10px;
+                                                }
+                                                input{
+                                                                margin: 30px 30px;
+                                                                width: 200px;
+                                                                height: 40px;
+                                                                border-radius: 2px;
+                                                                font-size: 14px;
+                                                                font-family: "microsoft yahei";
+                                                                background: #418C59;
+                                                }
+                                                input:hover{
+                                                                background: pink;
+                                                }
+                                                .inp{
+                                                                margin-left: 300px;
+                                                }
+
+                                </style>
+                </head>
+                <body>
+                                <div class="root">
+                                                <div class="child1">
+                                                                <div class="child2">
+                                                                                <div class="child3"></div>
+                                                                                <div class="child3"></div>
+                                                                </div>
+                                                                <div class="child2">
+                                                                                <div class="child3"></div>
+                                                                                <div class="child3"></div>
+                                                                </div>
+                                                </div>
+                                                <div class="child1">
+                                                                <div class="child2">
+                                                                                <div class="child3"></div>
+                                                                                <div class="child3"></div>
+                                                                </div>
+                                                                <div class="child2">
+                                                                                <div class="child3"></div>
+                                                                                <div class="child3"></div>
+                                                                </div>
+                                                </div>
+                                </div>
+                                <input type="button" id="btn1" value="前序遍历" class="inp">
+                                <input type="button" id="btn2" value="中序遍历">
+                                <input type="button" id="btn3" value="后序遍历">
+                                <script src="task2-010-遍历二叉树.js"></script>
+                </body>
+</html>
