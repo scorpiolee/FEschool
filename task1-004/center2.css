@@ -1,0 +1,31 @@
+/*绝对定位加固定宽高*/
+.box{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 400px;
+	height: 200px;
+	background: #CCCCCC;
+	overflow: hidden;
+}
+.left{
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 100px;
+	height: 100px;
+	background: #fc0;
+	border-radius: 50px;
+}
+.right{
+	position: absolute;
+	bottom: -50px;
+	right: -50px;
+	width: 100px;
+	height: 100px;
+	background: #fc0;
+	border-radius: 50px;
+}

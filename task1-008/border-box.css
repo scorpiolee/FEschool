@@ -1,0 +1,73 @@
+
+/*列之间不用calc函数就，没办法加margin，列之间是没有边距的*/
+
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+
+.row:after,.row:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.container{
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
+	margin: auto;
+}
+.container *{
+	box-sizing: border-box;
+}
+
+
+[class*='col-']{
+	float: left;
+	min-height: 1px;
+	background: #418C59;	
+	padding: 10px;
+	border: 1px solid #000000;
+}
+
+@media only screen and (min-width: 769px) {
+	
+	.col-md-1{
+		width: 8.333%;
+	}
+	.col-md-2{
+		width: 16.666%;
+	}
+	.col-md-3{
+		width: 25%;
+	}
+	.col-md-4{
+		width: 33.33%;
+		
+	}
+	.col-md-6{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 768px ) {
+	
+	.col-sm-2{
+		width: 16.666%;
+	}
+	.col-sm-3{
+		width: 25%;
+	}
+	.col-sm-6{
+		width: 50%;
+	}
+	.col-sm-8{
+		width: 66.666%;
+	}
+	.col-sm-12{
+		width: 100%;
+	}
+	
+}
