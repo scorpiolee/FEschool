@@ -1,0 +1,75 @@
+
+
+#header,#footer{
+                background: #000000;
+                opacity: 0.6;
+
+}
+#left{
+                background: #3355d0;
+                opacity: 0.7;
+}
+#center{
+                background: #999999;
+                opacity: 0.8;
+}
+#right{
+                background: #cc7680;
+                opacity: 0.7;
+}
+/*          vh:相对于视窗的高度，那么vw:则是相对于视窗的高度           */
+
+.HolyGrail{
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+}
+header,footer{
+                flex: 1 1 10%;
+}
+
+.HolyGrail-body{
+                display: flex;
+                flex:1;
+
+}
+.HolyGrail-content{
+                flex:1;
+
+}
+.HolyGrail-nav, .HolyGrail-ads{
+                flex: 0 0 12em ;
+
+}
+.HolyGrail-nav{
+                order: -1;
+}
+
+
+@media ( max-width: 768px ) {
+                .HolyGrail-body{
+                                flex-direction: column;
+                                flex:1;
+                }
+                .HolyGrail-nav,
+                .HolyGrail-ads,
+                .HolyGrail-content{
+                                flex:auto;
+                }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

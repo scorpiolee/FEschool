@@ -1,0 +1,22 @@
+
+body{
+                margin: 0;
+                padding:0;
+}
+
+.Grid{
+                display: flex;
+                flex-flow: row wrap;
+}
+.Grid-cell{
+                justify-content: space-around;
+                display: flex;
+                flex-basis: 100%;
+}
+.item {
+                background: #c3c3c3;
+                height: 100px;
+                border-radius: 10px;
+                flex:1;
+                margin: 10px;
+}

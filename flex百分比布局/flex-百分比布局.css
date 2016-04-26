@@ -1,0 +1,32 @@
+
+body{
+                margin: 0;
+                padding:0;
+}
+
+.Grid{
+                display: flex;
+                flex-flow: row wrap;
+}
+.Grid-cell{
+                display: flex;
+               flex-basis: 100%;           /*    宽度为100%，才能成功换行*/
+}
+
+.item {
+                background: #c3c3c3;
+                height: 100px;
+                border-radius: 10px;
+                flex:1;                             /*      flex:1    flex:1 1 0%         即宽度不设置，宽度溢出的部分分给每一个.item的元素                */
+                margin: 10px;
+}
+
+.u-1of2{
+                flex: 0 0 50%;
+}
+.u-1of3 {
+                flex: 0 0 33.3333%;
+}
+.u-1of4 {
+                flex: 0 0 25%;
+}
