@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>		
+		    body{		    	
+			    font-family: "微软雅黑";
+			    font-size: 14px;
+		    }
+	    </style>
+	</head>
+	<body>
+		<h3>污染城市列表</h3>
+		<ul id="aqi-list">
+			<!--<li>第一名：西安(90),</li>
+			<li>第二名：北京(190),</li>-->
+		</ul>
+		<script type="text/javascript">
+			
+			var aqiData = [
+			    ["北京",90],
+			    ["上海",50],
+			    ["夏威夷",10],
+			    ["古巴",50],
+			    ["呵呵",80],
+			    ["西安",100],
+			];
+						
+			(function(){
+				
+				var result = '';
+				var oUl = document.getElementById('aqi-list');
+				
+				//用filter(用条件来选择数组中符合条件的)和sort函数，后面输出可以用forEach的方法
+				aqiData = aqiData.filter(function(d) {
+					return (d[1] > 60);
+				}).sort(function(d1,d2){
+					return d2[1] > d1[1];					
+				});				
+				for(var i = 0; i<aqiData.length; i++){
+					
+					result += '<li>第' + (i + 1) + '名：' + aqiData[i][0] + ' ' + aqiData[i][1] + '</li>';
+				}
+				oUl.innerHTML = result;				
+			})();														
+		</script>
+	</body>
+</html>
